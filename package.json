@@ -1,15 +1,15 @@
 {
-    "name": "Selvania-Launcher",
-    "preductname": "Selvania Launcher",
-    "version": "2.0.7",
-    "description": "Launcher Mincraft pour le serveur Selvania",
+    "name": "Owleaf-Client",
+    "preductname": "Owleaf Client",
+    "version": "2.0.0",
+    "description": "Lanzador de Minecraft para el servidor de Owleaf",
     "main": "src/app.js",
     "author": {
-        "name": "luuxis, Inc.",
+        "name": "SoyPandax, Inc.",
         "email": "contact@luuxis.fr",
         "url": "https://github.com/luuxis"
     },
-    "url": "http://launcher.luuxis.fr",
+    "url": "http://na23.holy.gg:19378/LightZone/main",
     "scripts": {
         "start": "cross-env-shell NODE_ENV=dev electron .",
         "dev": "cross-env-shell DEV_TOOL=open nodemon --exec npm start",

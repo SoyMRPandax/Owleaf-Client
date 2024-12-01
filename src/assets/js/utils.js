@@ -1,5 +1,5 @@
 /**
- * @author Luuxis
+ * @author Soy_Pandax
  * @license CC-BY-NC 4.0 - https://creativecommons.org/licenses/by-nc/4.0
  */
 
@@ -89,9 +89,9 @@ async function setStatus(opt) {
 
     if (!opt) {
         statusServerElement.classList.add('red')
-        statusServerElement.innerHTML = `Ferme - 0 ms`
-        document.querySelector('.status-player-count').classList.add('red')
-        playersOnline.innerHTML = '0'
+        statusServerElement.innerHTML = ``
+        document.querySelector('.').classList.add('red')
+        playersOnline.innerHTML = ''
         return
     }
 
@@ -102,14 +102,14 @@ async function setStatus(opt) {
 
     if (!statusServer.error) {
         statusServerElement.classList.remove('red')
-        document.querySelector('.status-player-count').classList.remove('red')
-        statusServerElement.innerHTML = `En ligne - ${statusServer.ms} ms`
+        document.querySelector('.').classList.remove('red')
+        statusServerElement.innerHTML = ` - ${statusServer.ms} `
         playersOnline.innerHTML = statusServer.playersConnect
     } else {
         statusServerElement.classList.add('red')
-        statusServerElement.innerHTML = `Ferme - 0 ms`
-        document.querySelector('.status-player-count').classList.add('red')
-        playersOnline.innerHTML = '0'
+        statusServerElement.innerHTML = ``
+        document.querySelector('.').classList.add('red')
+        playersOnline.innerHTML = ''
     }
 }
 
